@@ -23,11 +23,11 @@ Every running program consumes the battery. This could be a program that is part
 
 ### FlexiCharger
 
-On several models of our laptops, Flexicharger can be used to change the top charge the computer will fill the battery to.  The general consensus is that charging a battery to 100% every time will shorten it's overall lifespan.  To adjust the top charge, reboot the computer and enter into BIOS by holding down <kbd>F2</kbd>, and navigate to Advanced, then Advanced Chipset Control, and set Flexicharger to Enabled. Reduce the top charge down 10-20% to possibly gain additional battery lifespan, at the cost of daily battery life.
+On several models of our laptops, Flexicharger can be used to change the top charge the computer will fill the battery to.  The general consensus is that charging a battery to 100% every time will shorten its overall lifespan.  To adjust the top charge, reboot the computer and enter into BIOS by holding down <kbd>F2</kbd>, and navigate to Advanced, then Advanced Chipset Control, and set Flexicharger to Enabled. Reduce the top charge down 10-20% to possibly gain additional battery lifespan, at the cost of daily battery life.
 
 ## Useful Programs
 
-<u>TLP</u> is an excellent program for increasing battery life on all of our laptops. <u>TLP</u> is a pure command line tool with automated background tasks and does not contain a GUI. It's default settings are excellent for most situations and require little tuning. <u>TLP</u> will take care of most of the settings that <u>Powertop</u> autotuning would, and with less trial and error.
+<u>TLP</u> is an excellent program for increasing battery life on all of our laptops. <u>TLP</u> is a pure command line tool with automated background tasks and does not contain a GUI. Its default settings are excellent for most situations and require little tuning. <u>TLP</u> will take care of most of the settings that <u>Powertop</u> autotuning would, and with less trial and error.
 
 To install TLP, run this command:
 
@@ -92,7 +92,7 @@ After looking at running software, head over to the 'Tuning' tab. We recommend i
 sudo powertop --auto-tune
 ```
 
-Please test the settings and make sure they doesn't introduce any instability or oddities. The above command will only last until reboot. To make the new settings persist after reboot, please edit the /etc/rc.local file with this command:
+Please test the settings and make sure they don't introduce any instability or oddities. The above command will only last until reboot. To make the new settings persist after reboot, please edit the /etc/rc.local file with this command:
 
 ```
 gksu gedit /etc/rc.local
